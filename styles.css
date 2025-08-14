@@ -1,10 +1,10 @@
 /* Global Styles and Variables */
 :root {
-    --golden-amber: #E1A12D;
-    --light-gold: #F3D678;
+    --golden-amber: #FF6B35;
+    --light-gold: #FFB380;
     --teal-blue: #0D4E5B;
     --deep-brown: #362015;
-    --warm-orange: #F0A44C;
+    --warm-orange: #FF9558;
     --soft-aqua: #CBE5F0;
     --white: #FFFFFF;
     --black: #000000;
@@ -631,7 +631,7 @@ h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-xl);
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -706,6 +706,27 @@ h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
     font-size: 0.875rem;
 }
 
+.points-multiplier {
+    background: var(--light-gold);
+    color: var(--deep-brown);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-md);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: var(--spacing-sm);
+}
+
+.points-multiplier.silver {
+    background: #c0c0c0;
+    color: #4a4a4a;
+}
+
+.points-multiplier.gold {
+    background: var(--golden-amber);
+    color: var(--deep-brown);
+}
+
 .card-features {
     list-style: none;
     margin-bottom: var(--spacing-xl);
@@ -729,6 +750,10 @@ h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
 
 .check-icon.gold {
     fill: var(--golden-amber);
+}
+
+.check-icon.silver {
+    fill: #c0c0c0;
 }
 
 .card-cta {
@@ -755,6 +780,19 @@ h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
 
 .premium-cta:hover {
     background: linear-gradient(135deg, var(--warm-orange), var(--golden-amber));
+}
+
+.silver-cta {
+    background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
+    color: #4a4a4a;
+}
+
+.silver-cta:hover {
+    background: linear-gradient(135deg, #a8a8a8, #c0c0c0);
+}
+
+.membership-card.silver {
+    border: 2px solid #c0c0c0;
 }
 
 /* CTA Button */

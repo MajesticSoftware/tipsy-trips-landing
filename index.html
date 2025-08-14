@@ -171,37 +171,39 @@
                     <input type="checkbox" id="billing-toggle">
                     <span class="toggle-slider"></span>
                 </label>
-                <span class="toggle-label" data-billing="annual">Annual <span class="save-badge">Save 20%</span></span>
+                <span class="toggle-label" data-billing="annual">Annual <span class="save-badge">Save 15%</span></span>
             </div>
             <div class="membership-cards">
-                <div class="membership-card standard animate-on-scroll">
+                <!-- Free/Basic Tier -->
+                <div class="membership-card basic animate-on-scroll">
                     <div class="card-header">
-                        <h3 class="card-title">Explorer</h3>
+                        <h3 class="card-title">Free / Basic</h3>
                         <div class="card-price">
                             <span class="price-currency">$</span>
                             <span class="price-amount" data-monthly="0" data-annual="0">0</span>
                             <span class="price-period">/month</span>
                         </div>
                         <p class="card-subtitle">Perfect for casual happy hour enthusiasts</p>
+                        <div class="points-multiplier">1x Points Multiplier</div>
                     </div>
                     <ul class="card-features">
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Access to all happy hour listings
+                            Earn points at the standard rate
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Basic rewards program
+                            Access to all basic happy hour listings
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Interactive map view
+                            Join the Tipsy Trips community feed
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon">
@@ -213,52 +215,102 @@
                             <svg viewBox="0 0 24 24" class="check-icon">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Push notifications for deals
+                            Access to the prize pool
                         </li>
                     </ul>
                     <button class="card-cta" onclick="alert('Coming Spring 2026! Check back later for updates.'); return false;">Pre-Register Free</button>
                 </div>
-                <div class="membership-card premium animate-on-scroll">
-                    <div class="popular-badge">Most Popular</div>
+
+                <!-- Top Shelf (Silver) Tier -->
+                <div class="membership-card silver animate-on-scroll">
                     <div class="card-header">
-                        <h3 class="card-title">VIP Pass</h3>
+                        <h3 class="card-title">Top Shelf (Silver)</h3>
                         <div class="card-price">
                             <span class="price-currency">$</span>
-                            <span class="price-amount" data-monthly="9.99" data-annual="7.99">9.99</span>
+                            <span class="price-amount" data-monthly="7.99" data-annual="6.79">7.99</span>
                             <span class="price-period">/month</span>
                         </div>
-                        <p class="card-subtitle">Unlock the full Tipsy Trips experience</p>
+                        <p class="card-subtitle">Earn points faster and reach prizes sooner</p>
+                        <div class="points-multiplier silver">1.25x Points Multiplier</div>
                     </div>
                     <ul class="card-features">
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Everything in Explorer, plus:
+                            Everything in Basic, plus:
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" class="check-icon silver">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            Early access to select restaurant deals
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" class="check-icon silver">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            Silver-exclusive monthly offers
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" class="check-icon silver">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            Leave verified reviews & earn bonus points
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" class="check-icon silver">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            Access to basic badges and achievements
+                        </li>
+                    </ul>
+                    <button class="card-cta silver-cta" onclick="alert('Coming Spring 2026! Check back later for updates.'); return false;">Get Top Shelf</button>
+                </div>
+
+                <!-- Premium Pour (Gold) Tier -->
+                <div class="membership-card premium animate-on-scroll">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3 class="card-title">Premium Pour (Gold)</h3>
+                        <div class="card-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount" data-monthly="12.99" data-annual="11.04">12.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="card-subtitle">Earn points the fastest for the quickest path to prizes</p>
+                        <div class="points-multiplier gold">1.75x Points Multiplier</div>
+                    </div>
+                    <ul class="card-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            Everything in Top Shelf, plus:
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon gold">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Exclusive VIP-only deals
+                            Access exclusive VIP events & tasting experiences
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon gold">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            2X reward points
+                            Monthly Premium Pour raffles for exclusive prizes
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon gold">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Priority reservations
+                            Flash rewards & time-limited high-value specials
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon gold">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Special event invitations
+                            Curated "Members Only" deals from top restaurants
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" class="check-icon gold">
@@ -270,10 +322,10 @@
                             <svg viewBox="0 0 24 24" class="check-icon gold">
                                 <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
                             </svg>
-                            Premium badges & achievements
+                            Premium and seasonal badges & achievements
                         </li>
                     </ul>
-                    <button class="card-cta premium-cta" onclick="alert('Coming Spring 2026! Check back later for updates.'); return false;">Pre-Register VIP</button>
+                    <button class="card-cta premium-cta" onclick="alert('Coming Spring 2026! Check back later for updates.'); return false;">Get Premium Pour</button>
                 </div>
             </div>
         </div>
@@ -340,6 +392,18 @@
                     <img src="IMG_1396 3.jpg" alt="Tipsy Trips Logo" class="footer-logo">
                     <h3>Tipsy Trips</h3>
                     <p>Beyond the Glass, Where Every Sip Counts</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/tipsytrips.app/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/tipsytrips_?s=21&t=RKt51j6b5xebWAybPVBQmw" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (Twitter)">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
