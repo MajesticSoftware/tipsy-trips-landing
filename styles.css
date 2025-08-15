@@ -795,6 +795,43 @@ h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
     border: 2px solid #c0c0c0;
 }
 
+/* Waitlist Section */
+.waitlist {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(135deg, var(--soft-aqua) 0%, var(--white) 100%);
+}
+
+.waitlist-form-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    background: var(--white);
+}
+
+.waitlist iframe {
+    width: 100%;
+    border: none;
+    display: block;
+}
+
+/* Update card-cta to work as anchor links */
+.card-cta {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-xl);
+    background: var(--teal-blue);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
 /* CTA Button */
 .cta-button {
     display: inline-block;
